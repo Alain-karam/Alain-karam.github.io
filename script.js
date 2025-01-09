@@ -1,5 +1,5 @@
 const backgroundContainer = document.getElementById("backgroundContainer");
-const imageUrl = "images/TheGreatDayofHisWrathBlurred.jpg";
+const imageUrl = "images/background/backgroundBlurred.png";
 
 let currentImages = 0;
 
