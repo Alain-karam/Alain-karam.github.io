@@ -5,6 +5,24 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,23 +39,6 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     transition: opacity 0.3s ease;
     opacity: 1;
-}
-
-.logo {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    max-height: 100%;
-    width: auto;
-    object-fit: contain;
-    display: block;
-}
-
-.logo img:hover {
-    transform: scale(1.1);
 }
 
 .nav-links {
@@ -64,30 +65,32 @@ body {
     color: #00bcd4;
 }
 
-.background-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.background-image {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
+.logo img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
-/* Divise l'écran en deux parties égales */
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+
 .profile-section {
     display: flex;
     height: 100vh;
     width: 100%;
+    margin-bottom: 200px;
 }
 
-/* Section pour les informations */
 .profile-info {
     flex: 1;
     display: flex;
@@ -124,11 +127,28 @@ body {
     transform: scale(1.1);
 }
 
-/* Section pour la photo */
 .photo-container {
     width: 100%;
     height: 100%;
     object-fit: cover;
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
+}
+
+.Experiences h1 {
+    color: white;
+    font-size: 400%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.worldMapImage {
+    text-align:
+}
+
+.worldMap {
+    width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
