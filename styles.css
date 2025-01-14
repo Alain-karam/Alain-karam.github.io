@@ -71,7 +71,6 @@ body {
     padding: 5px;
 }
 
-
 .logo img {
     max-height: 100%;
     max-width: 100%;
@@ -80,7 +79,6 @@ body {
     object-fit: contain;
     transition: transform 0.3s ease;
 }
-
 
 .logo img:hover {
     transform: scale(1.1);
@@ -231,11 +229,23 @@ body {
     animation: fadeIn 0.3s ease-in-out;
 }
 
+
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
+}
+
+.lebanon-egypt {
+    width: 400px;
+    height: 2px;
+    background: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
