@@ -306,13 +306,13 @@ html { scroll-behavior: smooth; }
 }
 
 .project-link {
-  display: inline-flex;              /* keep icon + text aligned */
+  display: inline-flex;
   align-items: center;
   gap: 8px;
 
-  flex: none !important;             /* <-- do not grow or shrink */
-  width: auto !important;            /* <-- size to content */
-  white-space: nowrap;               /* keep on one line */
+  flex: none !important;
+  width: auto !important;
+  white-space: nowrap;
 
   padding: 8px 12px;
   border-radius: 999px;
