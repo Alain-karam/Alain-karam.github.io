@@ -1,0 +1,153 @@
+.projects-list {
+    display: grid;
+    gap: 22px;
+}
+
+.project-card {
+    scroll-margin-top: calc(var(--header-height) + 24px);
+    padding: 28px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(7px);
+}
+
+.project-card:target {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(114, 215, 223, 0.18), var(--shadow);
+}
+
+.project-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.project-code {
+    margin: 0 0 4px;
+    color: var(--color-accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+    line-height: 1.25;
+}
+
+.project-section {
+    margin-top: 24px;
+}
+
+.project-section h4 {
+    margin: 0 0 8px;
+    font-size: 1.02rem;
+}
+
+.project-description {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+.project-link {
+    display: inline-flex;
+    flex: none;
+    min-height: 40px;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 13px;
+    color: #111;
+    background: #fff;
+    border-radius: 999px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.project-link:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+    transform: translateY(-2px);
+}
+
+.project-link img {
+    width: 18px;
+    height: 18px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    padding: 5px 10px;
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    font-size: 0.86rem;
+}
+
+.assignment-list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.assignment-card {
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+.assignment-card h5 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+}
+
+.assignment-card p {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+.assignment-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 12px;
+}
+
+.assignment-actions a {
+    color: var(--color-accent);
+    font-weight: 800;
+}
+
+.technologies {
+    margin-top: 10px;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 680px) {
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+}

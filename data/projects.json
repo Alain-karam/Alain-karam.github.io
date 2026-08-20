@@ -1,0 +1,29 @@
+[
+    {
+        "id": "INF1070",
+        "courseCode": "INF1070",
+        "title": "Utilisation et administration des systèmes informatiques",
+        "repository": "https://github.com/Alain-karam/UQAM/tree/main/Year%202023/1-%20Winter/INF%201070",
+        "description": "",
+        "skills": [],
+        "assignments": []
+    },
+    {
+        "id": "INF1120",
+        "courseCode": "INF1120",
+        "title": "Introduction à la programmation",
+        "repository": "https://github.com/Alain-karam/UQAM/tree/main/Year%202023/1-%20Winter/INF%201120",
+        "description": "",
+        "skills": [],
+        "assignments": []
+    },
+    {
+        "id": "INF2050",
+        "courseCode": "INF2050",
+        "title": "Outils et pratiques de développement logiciel",
+        "repository": "https://github.com/Alain-karam/UQAM/tree/main/Year%202023/2%20-%20Summer/INF%202050",
+        "description": "",
+        "skills": [],
+        "assignments": []
+    }
+]

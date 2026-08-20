@@ -1,0 +1,37 @@
+[
+    {
+        "country": "Liban",
+        "years": ["1998–2007", "2013–2016"],
+        "details": ["Baccalauréat français", "Économie sociale — spécialité mathématiques"],
+        "icon": "images/icons/cedarTree.png",
+        "position": { "top": 35, "left": 58, "width": 4 }
+    },
+    {
+        "country": "Égypte",
+        "years": ["2007–2009"],
+        "details": [],
+        "icon": "images/icons/pyramids.png",
+        "position": { "top": 40, "left": 49, "width": 7 }
+    },
+    {
+        "country": "Chine",
+        "years": ["2009–2011"],
+        "details": [],
+        "icon": "images/icons/pearlTower.png",
+        "position": { "top": 32, "left": 76, "width": 5 }
+    },
+    {
+        "country": "Russie",
+        "years": ["2011–2013"],
+        "details": [],
+        "icon": "images/icons/redSquare.png",
+        "position": { "top": 16, "left": 59, "width": 5 }
+    },
+    {
+        "country": "Canada",
+        "years": ["2016–aujourd'hui"],
+        "details": [],
+        "icon": "images/icons/mapleLeaf.png",
+        "position": { "top": 22, "left": 24, "width": 5 }
+    }
+]

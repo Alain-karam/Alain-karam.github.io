@@ -1,0 +1,113 @@
+.curriculum-list {
+    display: grid;
+    gap: 26px;
+}
+
+.year-group {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 22px;
+    padding: 26px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(7px);
+}
+
+.year-title {
+    margin: 0;
+    color: var(--color-accent);
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+.term-list {
+    display: grid;
+    gap: 20px;
+}
+
+.term-row {
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    align-items: start;
+    gap: 18px;
+}
+
+.term-row + .term-row {
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+}
+
+.term-title {
+    margin: 4px 0 0;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.course-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.course-chip {
+    display: inline-flex;
+    min-height: 36px;
+    align-items: center;
+    padding: 6px 12px;
+    color: #10262a;
+    background: #f4f8f7;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a.course-chip {
+    background: var(--color-accent);
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+a.course-chip:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+    transform: translateY(-2px);
+}
+
+.course-chip-project {
+    margin-left: 5px;
+    font-size: 0.72rem;
+}
+
+.courses-legend {
+    margin: 0 0 20px;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+.legend-swatch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    background: var(--color-accent);
+    border-radius: 50%;
+}
+
+@media (max-width: 680px) {
+    .year-group {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .term-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .term-title {
+        margin: 0;
+    }
+}

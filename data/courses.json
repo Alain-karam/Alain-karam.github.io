@@ -1,0 +1,55 @@
+[
+    { "year": 2023, "term": "Hiver", "courses": [
+        { "code": "INF1070", "hasProject": true },
+        { "code": "INF1120", "hasProject": true },
+        { "code": "AOT1110", "hasProject": false }
+    ]},
+    { "year": 2023, "term": "Été", "courses": [
+        { "code": "INF2050", "hasProject": true },
+        { "code": "INF2120", "hasProject": false },
+        { "code": "INF3190", "hasProject": false }
+    ]},
+    { "year": 2023, "term": "Automne", "courses": [
+        { "code": "INF1132", "hasProject": false },
+        { "code": "MAT0600", "hasProject": false },
+        { "code": "MAT4681", "hasProject": false }
+    ]},
+    { "year": 2024, "term": "Hiver", "courses": [
+        { "code": "INF2171", "hasProject": false },
+        { "code": "ARA1100", "hasProject": false },
+        { "code": "ECO1081", "hasProject": false }
+    ]},
+    { "year": 2024, "term": "Été", "courses": [
+        { "code": "INF3271", "hasProject": false },
+        { "code": "ESP1000", "hasProject": false }
+    ]},
+    { "year": 2024, "term": "Automne", "courses": [
+        { "code": "INF3080", "hasProject": false },
+        { "code": "INF3135", "hasProject": false }
+    ]},
+    { "year": 2025, "term": "Hiver", "courses": [
+        { "code": "JUR6854", "hasProject": false },
+        { "code": "AOT3221", "hasProject": false }
+    ]},
+    { "year": 2025, "term": "Été", "courses": [
+        { "code": "INF3105", "hasProject": false },
+        { "code": "INM6000", "hasProject": false }
+    ]},
+    { "year": 2025, "term": "Automne", "courses": [
+        { "code": "INF3173", "hasProject": false },
+        { "code": "INF5130", "hasProject": false },
+        { "code": "INF5190", "hasProject": false }
+    ]},
+    { "year": 2026, "term": "Hiver", "courses": [
+        { "code": "INF4170", "hasProject": false },
+        { "code": "INF4471", "hasProject": false },
+        { "code": "INF5082", "hasProject": false },
+        { "code": "INF5151", "hasProject": false }
+    ]},
+    { "year": 2026, "term": "Été", "courses": [
+        { "code": "INF5153", "hasProject": false },
+        { "code": "INF6120", "hasProject": false },
+        { "code": "INF6150", "hasProject": false },
+        { "code": "INM5151", "hasProject": false }
+    ]}
+]

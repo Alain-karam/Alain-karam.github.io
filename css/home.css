@@ -1,0 +1,218 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding-top: var(--header-height);
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    min-height: calc(100vh - var(--header-height));
+    align-items: center;
+}
+
+.profile-info {
+    position: relative;
+    z-index: 1;
+    width: min(44%, 510px);
+    padding-block: 50px;
+}
+
+.profile-info h1 {
+    max-width: 650px;
+    margin: 6px 0 8px;
+    font-size: clamp(3rem, 8vw, 6.3rem);
+    line-height: 0.98;
+    text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.35);
+}
+
+.student-title {
+    margin: 24px 0 2px;
+    color: var(--color-muted);
+    font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+    font-style: italic;
+}
+
+.university {
+    max-width: 390px;
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.social-icons a {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 50%;
+    transition: transform 150ms ease, background 150ms ease;
+}
+
+.social-icons a:hover {
+    background: #fff;
+    transform: translateY(-3px);
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.photo-container {
+    position: absolute;
+    inset: var(--header-height) 0 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.3) 18%, #000 42%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.3) 18%, #000 42%);
+}
+
+.home-navigation {
+    padding-block: 100px;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+}
+
+.navigation-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.navigation-card {
+    position: relative;
+    min-height: 285px;
+    padding: 26px;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    backdrop-filter: blur(7px);
+    transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.navigation-card:hover {
+    border-color: rgba(114, 215, 223, 0.7);
+    transform: translateY(-5px);
+}
+
+.navigation-card-number {
+    color: var(--color-accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.navigation-card h3 {
+    margin: 44px 0 8px;
+    font-size: 1.55rem;
+}
+
+.navigation-card p {
+    margin: 0 0 28px;
+    color: var(--color-muted);
+}
+
+.card-link {
+    position: absolute;
+    bottom: 24px;
+    color: var(--color-accent);
+    font-weight: 800;
+}
+
+.contact-section {
+    margin-bottom: 110px;
+    padding: 54px;
+    text-align: center;
+    background: rgba(6, 34, 40, 0.82);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.contact-section h2 {
+    margin: 4px 0 8px;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.contact-section p:not(.eyebrow) {
+    margin: 0 0 22px;
+    color: var(--color-muted);
+}
+
+@media (max-width: 900px) {
+    .profile-info {
+        width: min(52%, 450px);
+    }
+
+    .navigation-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation-card {
+        min-height: 230px;
+    }
+}
+
+@media (max-width: 680px) {
+    .hero-content {
+        min-height: calc(100vh - var(--header-height));
+    }
+
+    .profile-info {
+        width: 100%;
+        max-width: 330px;
+        padding: 45px 0;
+    }
+
+    .photo-container {
+        inset: var(--header-height) 0 0;
+    }
+
+    .profile-photo {
+        object-position: 58% center;
+        filter: brightness(0.72);
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.82) 68%, #000 100%);
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.82) 68%, #000 100%);
+    }
+
+    .home-navigation {
+        padding-block: 72px;
+    }
+
+    .contact-section {
+        margin-bottom: 72px;
+        padding: 38px 20px;
+    }
+}

@@ -1,0 +1,94 @@
+.map-card {
+    padding: 24px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(7px);
+}
+
+.world-map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    margin-inline: auto;
+}
+
+.world-map {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.country-marker {
+    position: absolute;
+    width: var(--marker-width, 5%);
+    min-width: 26px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.country-marker > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 180ms ease;
+}
+
+.country-marker:hover > img,
+.country-marker:focus-visible > img {
+    transform: scale(1.18);
+}
+
+.experience-tooltip {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    z-index: 20;
+    display: none;
+    width: max-content;
+    max-width: min(240px, 70vw);
+    padding: 11px 14px;
+    color: var(--color-text);
+    background: rgba(3, 23, 27, 0.96);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    font-size: 0.86rem;
+    line-height: 1.4;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.experience-tooltip strong,
+.experience-tooltip span {
+    display: block;
+}
+
+.experience-tooltip span {
+    margin-top: 2px;
+    color: var(--color-muted);
+}
+
+.country-marker:hover .experience-tooltip,
+.country-marker:focus .experience-tooltip,
+.country-marker:focus-within .experience-tooltip {
+    display: block;
+}
+
+@media (max-width: 680px) {
+    .map-card {
+        padding: 10px;
+    }
+
+    .country-marker {
+        min-width: 22px;
+    }
+
+    .experience-tooltip {
+        font-size: 0.76rem;
+    }
+}
