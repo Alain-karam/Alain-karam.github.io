@@ -18,7 +18,6 @@
         <header class="page-heading">
             <p class="eyebrow">Parcours</p>
             <h1>Expériences</h1>
-            <p>Survolez ou sélectionnez un repère pour découvrir une étape de mon parcours.</p>
         </header>
 
         <section class="map-card" aria-label="Carte de mon parcours international">
@@ -28,6 +27,32 @@
             <noscript>
                 <p class="empty-state">JavaScript doit être activé pour afficher les repères de la carte.</p>
             </noscript>
+        </section>
+
+        <section class="experience-section" aria-labelledby="education-title">
+            <header class="experience-section-heading">
+                <p class="eyebrow">Formation</p>
+                <h2 id="education-title">Diplômes et certifications</h2>
+            </header>
+
+            <div class="experience-group" aria-labelledby="degrees-title">
+                <h3 id="degrees-title">Diplômes</h3>
+                <div id="education-list" class="profile-card-grid"></div>
+            </div>
+
+            <div class="experience-group" aria-labelledby="certifications-title">
+                <h3 id="certifications-title">Certifications</h3>
+                <div id="certifications-list" class="profile-card-grid"></div>
+            </div>
+        </section>
+
+        <section class="experience-section" aria-labelledby="jobs-title">
+            <header class="experience-section-heading">
+                <p class="eyebrow">Expérience professionnelle</p>
+                <h2 id="jobs-title">Emplois liés à mon parcours informatique</h2>
+            </header>
+
+            <div id="jobs-list" class="profile-card-grid"></div>
         </section>
     </main>
 

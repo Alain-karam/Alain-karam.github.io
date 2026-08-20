@@ -103,6 +103,8 @@ a {
 
 .navbar {
     display: flex;
+    width: calc(100% - clamp(28px, 4.2vw, 80px));
+    max-width: none;
     min-height: var(--header-height);
     align-items: center;
     justify-content: space-between;

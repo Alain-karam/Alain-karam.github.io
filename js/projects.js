@@ -1,4 +1,5 @@
 const projectsContainer = document.getElementById('projects-list');
+const projectsIndexContainer = document.getElementById('project-index-links');
 
 function appendEmptyState(container, text) {
     const message = document.createElement('p');
@@ -22,6 +23,14 @@ function createRepositoryLink(url) {
     const label = document.createElement('span');
     label.textContent = 'Voir le dépôt GitHub';
     link.append(icon, label);
+    return link;
+}
+
+function createProjectIndexLink(project) {
+    const link = document.createElement('a');
+    link.className = 'project-index-link';
+    link.href = `#${project.id}`;
+    link.textContent = project.courseCode || project.title;
     return link;
 }
 
@@ -160,13 +169,17 @@ async function loadProjects() {
         }
 
         const projects = await response.json();
-        projects.forEach((project) => projectsContainer.appendChild(createProjectCard(project)));
+        projects.forEach((project) => {
+            projectsIndexContainer.appendChild(createProjectIndexLink(project));
+            projectsContainer.appendChild(createProjectCard(project));
+        });
 
         const requestedProjectId = decodeURIComponent(window.location.hash.slice(1));
         const requestedProject = document.getElementById(requestedProjectId);
 
         if (requestedProject) {
-            requestedProject.scrollIntoView({ block: 'start' });
+            requestedProject.classList.add('is-targeted');
+            requestedProject.scrollIntoView({ behavior: 'instant', block: 'start' });
         }
     } catch (error) {
         const message = document.createElement('p');

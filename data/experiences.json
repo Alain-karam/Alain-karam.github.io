@@ -1,37 +1,138 @@
-[
-    {
-        "country": "Liban",
-        "years": ["1998–2007", "2013–2016"],
-        "details": ["Baccalauréat français", "Économie sociale — spécialité mathématiques"],
-        "icon": "images/icons/cedarTree.png",
-        "position": { "top": 35, "left": 58, "width": 4 }
-    },
-    {
-        "country": "Égypte",
-        "years": ["2007–2009"],
-        "details": [],
-        "icon": "images/icons/pyramids.png",
-        "position": { "top": 40, "left": 49, "width": 7 }
-    },
-    {
-        "country": "Chine",
-        "years": ["2009–2011"],
-        "details": [],
-        "icon": "images/icons/pearlTower.png",
-        "position": { "top": 32, "left": 76, "width": 5 }
-    },
-    {
-        "country": "Russie",
-        "years": ["2011–2013"],
-        "details": [],
-        "icon": "images/icons/redSquare.png",
-        "position": { "top": 16, "left": 59, "width": 5 }
-    },
-    {
-        "country": "Canada",
-        "years": ["2016–aujourd'hui"],
-        "details": [],
-        "icon": "images/icons/mapleLeaf.png",
-        "position": { "top": 22, "left": 24, "width": 5 }
-    }
-]
+{
+    "map": [
+        {
+            "country": "Liban",
+            "years": ["1998–2007", "2013–2016"],
+            "details": ["Baccalauréat français", "Économie sociale — spécialité mathématiques"],
+            "icon": "images/icons/cedarTree.png",
+            "position": { "top": 35, "left": 58, "width": 4 }
+        },
+        {
+            "country": "Égypte",
+            "years": ["2007–2009"],
+            "details": [],
+            "icon": "images/icons/pyramids.png",
+            "position": { "top": 40, "left": 49, "width": 7 }
+        },
+        {
+            "country": "Chine",
+            "years": ["2009–2011"],
+            "details": [],
+            "icon": "images/icons/pearlTower.png",
+            "position": { "top": 32, "left": 76, "width": 5 }
+        },
+        {
+            "country": "Russie",
+            "years": ["2011–2013"],
+            "details": [],
+            "icon": "images/icons/redSquare.png",
+            "position": { "top": 16, "left": 59, "width": 5 }
+        },
+        {
+            "country": "Canada",
+            "years": ["2016–aujourd'hui"],
+            "details": ["Baccalauréat en informatique et génie logiciel"],
+            "icon": "images/icons/mapleLeaf.png",
+            "position": { "top": 22, "left": 24, "width": 5 }
+        }
+    ],
+    "education": [
+        {
+            "type": "Diplôme secondaire",
+            "title": "Baccalauréat français",
+            "institution": "",
+            "period": "",
+            "description": "",
+            "highlights": ["Économie sociale", "Spécialité mathématiques"]
+        },
+        {
+            "type": "Diplôme universitaire",
+            "title": "Baccalauréat en informatique et génie logiciel",
+            "institution": "Université du Québec à Montréal",
+            "period": "",
+            "description": "",
+            "highlights": [],
+            "skillGroups": [
+                {
+                    "label": "Langages et standards",
+                    "items": [
+                        "Java",
+                        "Python",
+                        "C++",
+                        "C",
+                        "OCaml",
+                        "Prolog",
+                        "SQL",
+                        "LaTeX",
+                        "HTML5",
+                        "CSS",
+                        "JavaScript",
+                        "PHP",
+                        "Assembleur",
+                        "Langage machine"
+                    ]
+                },
+                {
+                    "label": "Outils et environnements",
+                    "items": [
+                        "Unix/Linux",
+                        "PostgreSQL",
+                        "Ligne de commande et scripts shell",
+                        "Systèmes de contrôle de version",
+                        "Environnements de développement intégrés (IDE)",
+                        "Cadres de test",
+                        "Construction automatisée",
+                        "Débogage, profilage et couverture de tests",
+                        "Outils de suivi et de revue de code"
+                    ]
+                },
+                {
+                    "label": "Technologies et concepts",
+                    "items": [
+                        "Programmation orientée objet",
+                        "Programmation procédurale et impérative",
+                        "Programmation fonctionnelle et logique",
+                        "Structures de données et algorithmique",
+                        "Bases de données relationnelles",
+                        "Développement Web client et serveur",
+                        "Services Web et SaaS",
+                        "Systèmes d’exploitation et programmation système",
+                        "Réseaux, modèles OSI et TCP/IP",
+                        "Sécurité informatique et cryptographie",
+                        "Analyse de données et apprentissage automatique",
+                        "Analyse, modélisation et conception logicielle",
+                        "Patrons de conception et rétro-ingénierie",
+                        "Gestion de projets et assurance qualité"
+                    ]
+                }
+            ]
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Certificat professionnel Google Data Analytics",
+            "issuer": "Google",
+            "platform": "Coursera",
+            "period": "",
+            "credentialUrl": "",
+            "description": "",
+            "skills": []
+        }
+    ],
+    "jobs": [
+        {
+            "company": "Esports Central",
+            "role": "",
+            "period": "",
+            "description": "",
+            "skills": []
+        },
+        {
+            "company": "Couche-Tard",
+            "role": "",
+            "period": "",
+            "description": "",
+            "skills": []
+        }
+    ]
+}

@@ -57,7 +57,14 @@ Les champs encore inconnus peuvent rester vides. Ne pas ajouter de virgule aprè
 
 ## Modifier la carte des expériences
 
-Modifier `data/experiences.json`. Les valeurs `top`, `left` et `width` sont des pourcentages relatifs à la carte.
+Modifier `data/experiences.json` :
+
+- `map` contient les repères de la carte; `top`, `left` et `width` sont des pourcentages relatifs à la carte;
+- `education` contient les diplômes; le champ `skillGroups` permet de regrouper les compétences par catégorie sans les associer à un cours précis;
+- `certifications` contient les certificats et leurs liens;
+- `jobs` contient les emplois, les rôles et les compétences acquises.
+
+Les dates, descriptions, compétences et liens inconnus peuvent rester vides jusqu'à ce qu'ils soient complétés.
 
 ## Tester le site localement
 

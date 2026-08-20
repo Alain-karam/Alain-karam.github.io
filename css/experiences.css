@@ -79,6 +79,159 @@
     display: block;
 }
 
+.experience-section {
+    margin-top: 96px;
+}
+
+.experience-section-heading {
+    max-width: 780px;
+    margin-bottom: 36px;
+}
+
+.experience-section-heading h2 {
+    margin: 5px 0 10px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
+.experience-section-heading > p:last-child {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 1.05rem;
+}
+
+.experience-group + .experience-group {
+    margin-top: 42px;
+}
+
+.experience-group > h3 {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+}
+
+.profile-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: 18px;
+}
+
+#education-list {
+    grid-template-columns: 1fr;
+}
+
+.profile-card {
+    position: relative;
+    display: flex;
+    min-height: 245px;
+    flex-direction: column;
+    padding: 25px;
+    overflow: hidden;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(7px);
+}
+
+.profile-card::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background: var(--color-accent);
+    content: '';
+}
+
+.profile-card-kicker {
+    margin: 0 0 20px;
+    color: var(--color-accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.profile-card-title {
+    margin: 0;
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    line-height: 1.25;
+}
+
+.profile-card-organization {
+    margin: 8px 0 0;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.profile-card-period {
+    margin: 4px 0 0;
+    color: var(--color-accent);
+    font-size: 0.9rem;
+}
+
+.profile-card-description {
+    margin: 18px 0 0;
+    color: var(--color-muted);
+}
+
+.profile-card-placeholder {
+    margin: auto 0 0;
+    padding-top: 24px;
+    color: var(--color-muted);
+    font-size: 0.88rem;
+    font-style: italic;
+}
+
+.profile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-tags li {
+    padding: 5px 9px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    font-size: 0.82rem;
+}
+
+.profile-card-link {
+    align-self: flex-start;
+    margin-top: 20px;
+    color: var(--color-accent);
+    font-weight: 800;
+}
+
+.education-skills {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.education-skill-group {
+    padding: 17px;
+    background: rgba(0, 0, 0, 0.14);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+.education-skill-group h5 {
+    margin: 0 0 12px;
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+
+.education-skill-group .profile-tags {
+    margin-top: 0;
+}
+
 @media (max-width: 680px) {
     .map-card {
         padding: 10px;
@@ -90,5 +243,18 @@
 
     .experience-tooltip {
         font-size: 0.76rem;
+    }
+
+    .experience-section {
+        margin-top: 72px;
+    }
+
+    .profile-card {
+        min-height: 220px;
+        padding: 21px;
+    }
+
+    .education-skills {
+        grid-template-columns: 1fr;
     }
 }

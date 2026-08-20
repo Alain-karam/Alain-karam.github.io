@@ -4,17 +4,34 @@
         "courseCode": "INF1070",
         "title": "Utilisation et administration des systèmes informatiques",
         "repository": "https://github.com/Alain-karam/UQAM/tree/main/Year%202023/1-%20Winter/INF%201070",
-        "description": "",
-        "skills": [],
+        "description": "Administration de systèmes informatiques : ligne de commande, fichiers, processus, services, réseaux, sécurité et supervision.",
+        "skills": [
+            "Unix/Linux",
+            "Ligne de commande et scripts shell",
+            "Processus, redirections et tubes",
+            "Systèmes de fichiers et permissions",
+            "Expressions régulières",
+            "Installation de services et de serveurs",
+            "Sécurité et supervision"
+        ],
         "assignments": []
     },
     {
         "id": "INF1120",
         "courseCode": "INF1120",
-        "title": "Introduction à la programmation",
+        "title": "Programmation I",
         "repository": "https://github.com/Alain-karam/UQAM/tree/main/Year%202023/1-%20Winter/INF%201120",
-        "description": "",
-        "skills": [],
+        "description": "Développement de solutions logicielles orientées objet, de l’analyse du problème jusqu’au codage et aux tests.",
+        "skills": [
+            "Java",
+            "Algorithmique",
+            "Variables, types et opérateurs",
+            "Structures de contrôle",
+            "Tableaux",
+            "Entrées-sorties et fichiers texte",
+            "Classes, objets et méthodes",
+            "Encapsulation"
+        ],
         "assignments": []
     },
     {
@@ -22,8 +39,377 @@
         "courseCode": "INF2050",
         "title": "Outils et pratiques de développement logiciel",
         "repository": "https://github.com/Alain-karam/UQAM/tree/main/Year%202023/2%20-%20Summer/INF%202050",
-        "description": "",
-        "skills": [],
+        "description": "Développement logiciel dans un environnement professionnel avec des processus modernes, des outils collaboratifs et des pratiques de logiciel libre.",
+        "skills": [
+            "Java",
+            "Processus de développement logiciel",
+            "Logiciel libre et collaboration",
+            "Cadres de test",
+            "Gestion de configuration",
+            "Construction automatisée",
+            "Environnements de développement intégrés",
+            "Suivi et revue de code"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF2120",
+        "courseCode": "INF2120",
+        "title": "Programmation II",
+        "repository": "",
+        "description": "Approfondissement de la programmation orientée objet, des tests et de la conception de composants logiciels.",
+        "skills": [
+            "Java",
+            "Composition et héritage",
+            "Classes abstraites et polymorphisme",
+            "Récursion",
+            "Piles, files, listes et arbres binaires",
+            "Algorithmes de recherche et de tri",
+            "Événements et exceptions",
+            "Fils d’exécution"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF3190",
+        "courseCode": "INF3190",
+        "title": "Introduction à la programmation Web",
+        "repository": "",
+        "description": "Conception et développement d’applications Web du côté client et du côté serveur.",
+        "skills": [
+            "HTML5",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "Architecture navigateur-serveur",
+            "Protocoles Web",
+            "Cadres d’applications",
+            "Conception d’interfaces et SaaS"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF1132",
+        "courseCode": "INF1132",
+        "title": "Mathématiques pour l’informatique",
+        "repository": "",
+        "description": "Fondements mathématiques utilisés en informatique, de la logique formelle à l’analyse de la complexité algorithmique.",
+        "skills": [
+            "LaTeX (rédaction de devoirs en PDF)",
+            "Logique propositionnelle et prédicats",
+            "Théorie des ensembles",
+            "Preuves et induction",
+            "Relations et fonctions",
+            "Récursion",
+            "Graphes et parcours",
+            "Complexité spatiale et temporelle"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF2171",
+        "courseCode": "INF2171",
+        "title": "Organisation des ordinateurs et assembleur",
+        "repository": "",
+        "description": "Étude du fonctionnement de l’ordinateur depuis les circuits logiques jusqu’au langage machine et à l’assembleur.",
+        "skills": [
+            "Architecture processeur, mémoire et bus",
+            "Représentation binaire de l’information",
+            "Pointeurs, tableaux et enregistrements",
+            "Pile et tas",
+            "Langage machine",
+            "Assembleur",
+            "Sous-programmes et entrées-sorties"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF3271",
+        "courseCode": "INF3271",
+        "title": "Téléinformatique",
+        "repository": "",
+        "description": "Fondements des télécommunications et des réseaux informatiques modernes selon les modèles OSI et TCP/IP.",
+        "skills": [
+            "Modèles OSI et TCP/IP",
+            "HTTP, FTP et SNMP",
+            "Adressage IP",
+            "TCP et UDP",
+            "Routage et liaison de données",
+            "Transmission et multiplexage",
+            "Équipements d’interconnexion",
+            "Sécurité réseau"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF3080",
+        "courseCode": "INF3080",
+        "title": "Bases de données",
+        "repository": "",
+        "description": "Conception, exploitation et administration de bases de données relationnelles intégrées à des applications.",
+        "skills": [
+            "PostgreSQL",
+            "Modèles entité-association et relationnel",
+            "Algèbre relationnelle",
+            "SQL",
+            "Contraintes d’intégrité et déclencheurs",
+            "Indexation et hachage",
+            "Transactions",
+            "Sécurité des données",
+            "Optimisation des requêtes"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF3135",
+        "courseCode": "INF3135",
+        "title": "Construction et maintenance de logiciels",
+        "repository": "",
+        "description": "Construction professionnelle et maintenance de logiciels en C dans un environnement Unix/Linux.",
+        "skills": [
+            "C",
+            "Programmation procédurale et impérative",
+            "Unix/Linux",
+            "Modularité, cohésion et couplage",
+            "Débogage et assertions",
+            "Tests et couverture",
+            "Profilage et optimisation",
+            "Contrôle de version"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF3105",
+        "courseCode": "INF3105",
+        "title": "Structures de données et algorithmes",
+        "repository": "",
+        "description": "Conception et analyse de structures de données et d’algorithmes appliqués à la résolution efficace de problèmes.",
+        "skills": [
+            "C++",
+            "Types abstraits de données",
+            "Analyse de complexité",
+            "Collections",
+            "Arbres équilibrés",
+            "Tables de hachage",
+            "Graphes",
+            "Bibliothèques normalisées"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INM6000",
+        "courseCode": "INM6000",
+        "title": "Informatique et société",
+        "repository": "",
+        "description": "Réflexion sur le rôle, les responsabilités et les devoirs professionnels de l’informaticien dans la société.",
+        "skills": [
+            "Éthique professionnelle",
+            "Responsabilité sociale",
+            "Enjeux humains de l’informatique",
+            "Sécurité, morale et droit",
+            "Déontologie informatique"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF3173",
+        "courseCode": "INF3173",
+        "title": "Principes des systèmes d’exploitation",
+        "repository": "",
+        "description": "Concepts fondamentaux des systèmes d’exploitation et programmation système UNIX/Linux en C.",
+        "skills": [
+            "C et appels système",
+            "Processus, fork et exec",
+            "Threads et ordonnancement",
+            "Systèmes et descripteurs de fichiers",
+            "Communication interprocessus",
+            "Synchronisation et interblocages",
+            "Mémoire virtuelle",
+            "Sécurité des systèmes"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF5130",
+        "courseCode": "INF5130",
+        "title": "Algorithmique",
+        "repository": "",
+        "description": "Conception et analyse d’algorithmes, de la théorie de l’information jusqu’à la complexité et à la NP-complétude.",
+        "skills": [
+            "C++",
+            "Théorie de l’information et codage",
+            "Analyse asymptotique et probabiliste",
+            "Diviser pour régner",
+            "Algorithmes gloutons",
+            "Programmation dynamique",
+            "Algorithmes randomisés et retour arrière",
+            "Heuristiques",
+            "Machines de Turing et NP-complétude"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF5190",
+        "courseCode": "INF5190",
+        "title": "Programmation Web avancée",
+        "repository": "",
+        "description": "Conception et développement d’applications Web modernes, sécurisées, testables et connectées à des bases de données.",
+        "skills": [
+            "Cadres de développement Web",
+            "Intégration de bases de données",
+            "Authentification",
+            "Services Web et sérialisation",
+            "Gestion des erreurs",
+            "Interopérabilité et déploiement",
+            "Tests de charge",
+            "Sécurité des applications Web"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF4170",
+        "courseCode": "INF4170",
+        "title": "Architecture des ordinateurs",
+        "repository": "",
+        "description": "Étude de la structure et du fonctionnement interne des architectures informatiques modernes.",
+        "skills": [
+            "Architectures parallèles et multiprocesseurs",
+            "Fonctionnement du processeur",
+            "Jeux d’instructions et unité de contrôle",
+            "Architecture des mémoires",
+            "Entrées-sorties et interfaces",
+            "Pipeline",
+            "Traitement vectorisé",
+            "Réseaux d’interconnexion"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF4471",
+        "courseCode": "INF4471",
+        "title": "Introduction à la sécurité informatique",
+        "repository": "",
+        "description": "Analyse des risques, menaces et mécanismes permettant de protéger les systèmes informatiques et les réseaux.",
+        "skills": [
+            "Confidentialité, intégrité et disponibilité",
+            "Chiffrement symétrique et asymétrique",
+            "Hachage et signatures",
+            "Authentification et contrôle d’accès",
+            "Sécurité réseau et détection d’intrusion",
+            "Gestion des incidents",
+            "Analyse de risques et vulnérabilités",
+            "Politiques de sécurité"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF5082",
+        "courseCode": "INF5082",
+        "title": "Gestion et analyse de données",
+        "repository": "",
+        "description": "Choix et mise en œuvre de méthodes avancées de gestion, de préparation et d’analyse de données.",
+        "skills": [
+            "Python",
+            "Prétraitement et préparation des données",
+            "Extraction de connaissances",
+            "Forage de données",
+            "Apprentissage supervisé",
+            "Apprentissage non supervisé",
+            "Analyse prédictive et descriptive",
+            "Règles d’association"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF5151",
+        "courseCode": "INF5151",
+        "title": "Génie logiciel : analyse et modélisation",
+        "repository": "",
+        "description": "Analyse des besoins et modélisation des systèmes logiciels en tenant compte des utilisateurs et du cycle de vie.",
+        "skills": [
+            "Java",
+            "Cycles de vie du logiciel",
+            "Spécification des exigences",
+            "Modélisation conceptuelle",
+            "Modélisation fonctionnelle et dynamique",
+            "Processus et artefacts logiciels",
+            "Approche systémique",
+            "Analyse critique des méthodes"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF5153",
+        "courseCode": "INF5153",
+        "title": "Génie logiciel : conception",
+        "repository": "",
+        "description": "Conception de solutions logicielles réutilisables, maintenables et extensibles selon des critères architecturaux.",
+        "skills": [
+            "Architecture et critères de conception",
+            "Conception orientée objet",
+            "Patrons de conception",
+            "Cadres d’application",
+            "Intégration et essais système",
+            "Documentation de conception",
+            "Rétro-ingénierie"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF6120",
+        "courseCode": "INF6120",
+        "title": "Programmation fonctionnelle et logique",
+        "repository": "",
+        "description": "Techniques de résolution de problèmes fondées sur les paradigmes fonctionnel, déclaratif, logique et par contraintes.",
+        "skills": [
+            "OCaml",
+            "Prolog",
+            "Récursion et références immuables",
+            "Appariement de motifs",
+            "Fonctions d’ordre supérieur",
+            "Polymorphisme et inférence de types",
+            "Fermetures, curryage et application partielle",
+            "Concurrence et parallélisme",
+            "Unification et retour arrière",
+            "Programmation par contraintes"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INF6150",
+        "courseCode": "INF6150",
+        "title": "Génie logiciel : conduite de projets informatiques",
+        "repository": "",
+        "description": "Planification, suivi et évaluation critique de projets informatiques et de leurs processus de développement.",
+        "skills": [
+            "Java",
+            "Méthodologies de développement",
+            "Équipes et styles de gestion",
+            "Analyse des risques",
+            "Métriques logicielles",
+            "Estimation et échéanciers",
+            "Suivi et revues formelles",
+            "Assurance qualité",
+            "Contrôle de configuration"
+        ],
+        "assignments": []
+    },
+    {
+        "id": "INM5151",
+        "courseCode": "INM5151",
+        "title": "Projet d’analyse et de modélisation",
+        "repository": "",
+        "description": "Réalisation en équipe d’un projet de système d’information selon une méthode formelle utilisée dans l’industrie.",
+        "skills": [
+            "Java",
+            "Planification de projet",
+            "Analyse et conception de systèmes",
+            "Méthodologie de développement",
+            "Documentation formelle",
+            "Travail d’équipe",
+            "Présentations",
+            "Révisions structurées"
+        ],
         "assignments": []
     }
 ]

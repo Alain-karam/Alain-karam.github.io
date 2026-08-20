@@ -7,6 +7,8 @@
 
 .hero-content {
     display: flex;
+    width: calc(100% - clamp(28px, 4.2vw, 80px));
+    max-width: none;
     min-height: calc(100vh - var(--header-height));
     align-items: center;
 }
