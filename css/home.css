@@ -17,6 +17,7 @@
     position: relative;
     z-index: 1;
     width: min(44%, 510px);
+    margin-left: clamp(40px, 9vw, 170px);
     padding-block: 50px;
 }
 
@@ -128,6 +129,27 @@
     -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 48%, rgba(0, 0, 0, 0.72) 61%, #000 72%);
 }
 
+.hero.is-daytime .profile-info {
+    margin-right: clamp(40px, 9vw, 170px);
+    margin-left: auto;
+}
+
+.hero.is-daytime .photo-container::after {
+    background: linear-gradient(
+        to left,
+        rgba(7, 31, 37, 0.94) 0%,
+        rgba(7, 31, 37, 0.72) 34%,
+        rgba(7, 31, 37, 0.24) 64%,
+        rgba(7, 31, 37, 0.04) 100%
+    );
+}
+
+.hero.is-daytime .profile-photo {
+    object-position: left center;
+    mask-image: linear-gradient(to left, transparent 0%, transparent 48%, rgba(0, 0, 0, 0.72) 61%, #000 72%);
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, transparent 48%, rgba(0, 0, 0, 0.72) 61%, #000 72%);
+}
+
 .home-navigation {
     padding-block: 100px;
 }
@@ -232,6 +254,7 @@
     .profile-info {
         width: 100%;
         max-width: 330px;
+        margin-left: 0;
         padding: 45px 0;
     }
 
@@ -258,6 +281,30 @@
     .profile-photo.profile-photo-landscape {
         object-fit: cover;
         object-position: 82% center;
+    }
+
+    .hero.is-daytime .profile-info {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: right;
+    }
+
+    .hero.is-daytime .hero-actions,
+    .hero.is-daytime .social-icons {
+        justify-content: flex-end;
+    }
+
+    .hero.is-daytime .photo-container::after {
+        background: linear-gradient(to left, rgba(7, 31, 37, 0.86), rgba(7, 31, 37, 0.26));
+    }
+
+    .hero.is-daytime .profile-photo {
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.86) 66%, #000 100%);
+        -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.86) 66%, #000 100%);
+    }
+
+    .hero.is-daytime .profile-photo.profile-photo-landscape {
+        object-position: 22% center;
     }
 
     .home-navigation {

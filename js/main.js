@@ -72,11 +72,12 @@ function renderFooter() {
     `;
 }
 
-function prepareHeroBackground() {
+function prepareTimeBasedHero() {
+    const hero = document.querySelector('.hero');
     const image = document.querySelector('.profile-photo');
     const container = image?.closest('.photo-container');
 
-    if (!image || !container) {
+    if (!hero || !image || !container) {
         return;
     }
 
@@ -86,13 +87,28 @@ function prepareHeroBackground() {
         image.classList.toggle('profile-photo-landscape', image.naturalWidth >= image.naturalHeight);
     };
 
-    if (image.complete) {
-        updateBackground();
-    } else {
-        image.addEventListener('load', updateBackground, { once: true });
-    }
+    const applyLocalTimeTheme = () => {
+        const themeOverride = new URLSearchParams(window.location.search).get('theme');
+        const currentHour = new Date().getHours();
+        const isDaytime = themeOverride === 'day' || (themeOverride !== 'night' && currentHour >= 7 && currentHour < 19);
+        const imagePath = portfolioPath(`images/${isDaytime ? 'greatGreyOwl2.jpg' : 'greatGreyOwl.jpg'}`);
+        const absoluteImagePath = new URL(imagePath, document.baseURI).href;
+
+        hero.classList.toggle('is-daytime', isDaytime);
+        hero.dataset.timeTheme = isDaytime ? 'day' : 'night';
+
+        if (image.src !== absoluteImagePath) {
+            image.src = imagePath;
+        } else if (image.complete) {
+            updateBackground();
+        }
+    };
+
+    image.addEventListener('load', updateBackground);
+    applyLocalTimeTheme();
+    window.setInterval(applyLocalTimeTheme, 60_000);
 }
 
 renderHeader();
 renderFooter();
-prepareHeroBackground();
+prepareTimeBasedHero();
