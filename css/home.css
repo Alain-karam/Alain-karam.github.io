@@ -75,20 +75,57 @@
     object-fit: contain;
 }
 
+.social-icons .cv-icon {
+    color: var(--color-accent-dark);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+}
+
 .photo-container {
     position: absolute;
     inset: var(--header-height) 0 0;
     z-index: 0;
+    isolation: isolate;
+    background: var(--color-bg);
     pointer-events: none;
 }
 
+.photo-container::before {
+    position: absolute;
+    inset: -28px;
+    z-index: 0;
+    background: var(--hero-image, none) center / cover no-repeat;
+    content: '';
+    filter: blur(22px);
+    opacity: 0.55;
+    transform: scale(1.06);
+}
+
+.photo-container::after {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        to right,
+        rgba(7, 31, 37, 0.96) 0%,
+        rgba(7, 31, 37, 0.78) 34%,
+        rgba(7, 31, 37, 0.3) 64%,
+        rgba(7, 31, 37, 0.08) 100%
+    );
+    content: '';
+}
+
 .profile-photo {
+    position: relative;
+    z-index: 2;
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.3) 18%, #000 42%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.3) 18%, #000 42%);
+    object-fit: contain;
+    object-position: right center;
+    mask-image: linear-gradient(to right, transparent 0%, transparent 48%, rgba(0, 0, 0, 0.72) 61%, #000 72%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 48%, rgba(0, 0, 0, 0.72) 61%, #000 72%);
 }
 
 .home-navigation {
@@ -202,11 +239,25 @@
         inset: var(--header-height) 0 0;
     }
 
+    .photo-container::before {
+        filter: blur(14px);
+        opacity: 0.45;
+    }
+
+    .photo-container::after {
+        background: linear-gradient(to right, rgba(7, 31, 37, 0.88), rgba(7, 31, 37, 0.3));
+    }
+
     .profile-photo {
-        object-position: 58% center;
-        filter: brightness(0.72);
-        mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.82) 68%, #000 100%);
-        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.82) 68%, #000 100%);
+        object-position: center;
+        filter: brightness(0.82);
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.86) 66%, #000 100%);
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.86) 66%, #000 100%);
+    }
+
+    .profile-photo.profile-photo-landscape {
+        object-fit: cover;
+        object-position: 82% center;
     }
 
     .home-navigation {

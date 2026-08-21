@@ -72,5 +72,27 @@ function renderFooter() {
     `;
 }
 
+function prepareHeroBackground() {
+    const image = document.querySelector('.profile-photo');
+    const container = image?.closest('.photo-container');
+
+    if (!image || !container) {
+        return;
+    }
+
+    const updateBackground = () => {
+        const source = image.currentSrc || image.src;
+        container.style.setProperty('--hero-image', `url("${source}")`);
+        image.classList.toggle('profile-photo-landscape', image.naturalWidth >= image.naturalHeight);
+    };
+
+    if (image.complete) {
+        updateBackground();
+    } else {
+        image.addEventListener('load', updateBackground, { once: true });
+    }
+}
+
 renderHeader();
 renderFooter();
+prepareHeroBackground();
